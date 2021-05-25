@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>University of Puerto Rico&nbsp;LOGIN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                .logo_upr {
+                    margin: auto;
+                    width: 30%;
+                    border-radius: 100px;
+                    height: 30%;
+                    background: #f5f5f5;
+                    position: relative;
+                    bottom: -35px;
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+                }
+
+                .logo_upr img {
+                    border-radius: 100px;
+                    margin: auto;
+                    display: block;
+                    border: 1px solid #e3e3e3;
+                }
+
+		@media (max-width:768px) { 
+			.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+				float: none !important;
+			}
+		}
+
+		.footer {
+			margin-left: 5px;
+			padding: 10px;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			//height: 40px;
+			background-color: #f5f5f5;
+		}
+            </style>
+<script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+    </head>
+
+    <body style="background: #ffffff !important;">
+        <div style="top:auto; background-color: #f28c20; padding: 10px; color: white;">
+		<a href="http://www.upr.edu" alt="University of Puerto Rico" target="_blank">University of Puerto Rico</a>
+        </div>
+        <div class="container-fluid">
+            <div class="hidden-xs"><br /><br /><br /></div>
+            <div class="row-fluid">
+                <div class="col-xs-0 col-sm-3 col-md-4">&nbsp;</div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="logo_upr"><img alt="UPR Seal" src="/resources/sello-upr.png" class="img-responsive"/></div>
+                    <div class="well well-lg clearfix">
+                    <form action="?" method="post" name="f" autocomplete="off">
+                        <br />
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+                            <input type="text" class="form-control" placeholder="Username" name="username" value="" autofocus="aufofocus"/>
+                        </div>
+                        <br />
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+                            <input type="password" class="form-control" placeholder="Password" name="password" />
+                        </div>
+                        <br />
+			<script type="text/javascript">
+			var enableBtn = function() {
+				$('#idp_submit').removeAttr('disabled');
+			}
+			</script>
+                        <div class="pull-right">
+			    <button id='idp_submit' type="submit" class="btn btn-success" >Login&nbsp;<span class="glyphicon glyphicon-log-in"></button>
+			    <input type="hidden" name="AuthState" value="_c2c1f47235dba38b926fb685ee7c15a383682e3dc5:https://idp.upr.edu/saml2/idp/SSOService.php?spentityid=https%3A%2F%2Fonline.upr.edu&amp;RelayState=ss%3Amem%3A891d66c3aacc9e9ab76fb29c22431412b53d9326367fcc5c7eddf76efcdd6e31&amp;cookieTime=1615766183" />			</div>
+                    </form>
+                    </div>
+		                        <p><h6><em>Login using your username and password provided by the University of Puerto Rico.<br /><br />
+                    By accessing this service, you agree to the terms set by the <a href="http://www.upr.edu/reglamentacion-y-politicas-institucionales/" alt="Institutional Policy" target="_blank">institutional policy</a> for the use of electronic resources.</em><br /><br />
+		    		    <a href="https://idp.upr.edu/module.php/core/loginuserpass.php?AuthState=_c2c1f47235dba38b926fb685ee7c15a383682e3dc5%3Ahttps%3A%2F%2Fidp.upr.edu%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttps%253A%252F%252Fonline.upr.edu%26RelayState%3Dss%253Amem%253A891d66c3aacc9e9ab76fb29c22431412b53d9326367fcc5c7eddf76efcdd6e31%26cookieTime%3D1615766183&language=es">Cambiar lenguaje...</a></h6></p>
+		</div>
+                <div class="col-xs-0 col-sm-3 col-md-4">&nbsp;</div>
+               </div>
+             
+	      </div>
+	      <footer class="footer">
+			<a href="http://www.upr.edu/reglamentacion-y-politicas-institucionales/" alt="Privacy Policy" target="_blank">Privacy Policy</a>
+			&nbsp;|&nbsp;
+			<a href="http://www.upr.edu/reglamentacion-y-politicas-institucionales/" alt="Terms of Service" target="_blank">Terms of Service</a>
+	      </footer>
+       
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('form[name=f]').submit(function() {
+				var username = $(this).find('input[name=username]');
+				var split = username.val().split('@');
+
+				if (split.length > 1) {
+					username.val(split[0]);
+				}				
+			});
+		});
+	</script>
+    </body>
+</html>

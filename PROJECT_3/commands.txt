@@ -1,0 +1,3 @@
+iperf3.exe -c  127.0.0.1 -u > "..\..\..\Desktop\UPR\SMSTR_2_2020-2021\REDES Y SIST\PROJECT_3\client.txt"
+iperf3.exe -c  127.0.0.1 > "..\..\..\Desktop\UPR\SMSTR_2_2020-2021\REDES Y SIST\PROJECT_3\client.txt"
+iperf3.exe -s  > "..\..\..\Desktop\UPR\SMSTR_2_2020-2021\REDES Y SIST\PROJECT_3\server.txt"

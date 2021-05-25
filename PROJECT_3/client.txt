@@ -1,0 +1,19 @@
+Connecting to host iperf.biznetnetworks.com, port 5201
+[  4] local 192.168.0.5 port 50323 connected to 117.102.109.186 port 5201
+[ ID] Interval           Transfer     Bandwidth
+[  4]   0.00-1.01   sec   256 KBytes  2.09 Mbits/sec                  
+[  4]   1.01-2.01   sec   256 KBytes  2.09 Mbits/sec                  
+[  4]   2.01-3.01   sec   256 KBytes  2.10 Mbits/sec                  
+[  4]   3.01-4.00   sec   128 KBytes  1.06 Mbits/sec                  
+[  4]   4.00-5.01   sec   128 KBytes  1.04 Mbits/sec                  
+[  4]   5.01-6.01   sec  0.00 Bytes  0.00 bits/sec                  
+[  4]   6.01-7.01   sec   128 KBytes  1.04 Mbits/sec                  
+[  4]   7.01-8.01   sec   128 KBytes  1.05 Mbits/sec                  
+[  4]   8.01-9.00   sec   128 KBytes  1.06 Mbits/sec                  
+[  4]   9.00-10.00  sec   128 KBytes  1.05 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth
+[  4]   0.00-10.00  sec  1.50 MBytes  1.26 Mbits/sec                  sender
+[  4]   0.00-10.00  sec  1.31 MBytes  1.10 Mbits/sec                  receiver
+
+iperf Done.
